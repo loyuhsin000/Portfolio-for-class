@@ -1,9 +1,9 @@
-# Stage 00 — Original prototype, separated into files
+# Architecture Portfolio — Nine-page Static Site (pre-JSON stage)
 
-Source: `architectural_portfolio_prototype (2).html` supplied by the user.
+The first complete multipage release uses semantic HTML, a shared vanilla `css/style.css`, optimized assets, and minimal JavaScript.
 
-Changes performed: move existing inline CSS to `css/style.css`, move existing inline language/navigation JS to `js/main.js`, move Tailwind configuration into `js/tailwind-config.js`. The original text, Unsplash example imagery, styling logic and behavior were **not edited**.
+Pages: index, about, projects, four project details, photography, and other. `js/content.js` holds the initial bilingual text; `js/language.js` applies language changes without a server.
 
-**Not final:** this is the original fictional demonstration portfolio using Tailwind CDN and placeholder identity/projects. The next stage replaces the content with the user's actual portfolio and removes Tailwind. Don't use this stage as the final coursework submission.
+Next planned improvement: expose bilingual content in an editable `site-content.json` and load it at runtime on GitHub Pages.
 
-Images and documents are empty placeholders here, tracked with `.gitkeep` for Git.
+Open `index.html` to preview locally, or publish the repository root with GitHub Pages.
