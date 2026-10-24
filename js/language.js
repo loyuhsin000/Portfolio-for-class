@@ -25,5 +25,10 @@
  document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.lang-switch').forEach(b=>b.addEventListener('click',()=>apply(lang==='en'?'zh':'en')));
   apply(lang);
+  if(location.protocol==='http:'||location.protocol==='https:'){
+   fetch('./site-content.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Not found');return r.json()})
+    .then(latest=>{if(latest&&latest.translations&&Array.isArray(latest.projects)){content=latest;apply(lang)}})
+    .catch(()=>{}); // Offline or unreachable JSON: static fallback remains readable.
+  }
  });
 })();
