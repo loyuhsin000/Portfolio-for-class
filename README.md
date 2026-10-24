@@ -1,16 +1,18 @@
-# Architecture Portfolio — Stage 04: JSON content management
+# Architecture Portfolio — Stage 05: Homepage and section expansion
 
 ## Purpose
-Separate bilingual content from presentation so portfolio information is easier to maintain.
+Present the architecture portfolio as a personal website with clear navigation to design work and other interests.
 
 ## Changes in this stage
-- Add `site-content.json` for translatable text and project information.
-- Update `js/language.js` to request JSON when the site is served over HTTP(S).
-- Keep `js/content.js` as fallback content for local `file://` previews.
-- Keep the existing nine HTML pages and homepage layout unchanged.
+- Redesign `index.html` around a seated illustration, a large Portfolio title, and a short academic introduction.
+- Add a brief About section, rotating design project preview, and lower-page photography/models/paintings previews.
+- Add direct links to Architecture, Athletics, and Travel.
+- Create `sports.html` and `travel.html` for those categories.
+- Add `js/carousel.js` for homepage preview controls.
+- Remove prototype-only files no longer used by the new homepage: `css/prototype.css`, `js/main.js`, and `js/tailwind-config.js`.
 
-## Updating text
-Edit a value in `site-content.json` without changing its key. Reload the website through a local web server or GitHub Pages to see the change. Text not connected to the content keys remains in its HTML page.
+## Website structure
+The site contains eleven static HTML pages. Layout and responsive rules are maintained in `css/style.css`, while JavaScript handles language switching, navigation controls, and carousel behavior.
 
 ## Testing
-Check both languages on the homepage and project pages. When opening the HTML file directly from disk, note that browsers may restrict `fetch()`; the bundled JavaScript fallback provides offline text.
+Open the three main homepage entry points, check the Design and Photography preview controls, and confirm mobile navigation works. Review the written content and image order before publication.
