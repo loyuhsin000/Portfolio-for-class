@@ -1,9 +1,7 @@
-# Architecture Portfolio — Nine-page Static Site (pre-JSON stage)
+# Architecture Graduate Student Portfolio — Stage 03
 
-The first complete multipage release uses semantic HTML, a shared vanilla `css/style.css`, optimized assets, and minimal JavaScript.
+Nine real pages were added, each sourced from the approved final portfolio pages. The homepage deliberately retains the **original uploaded prototype's layout** (including `START YOUR ADVENTURE HERE`, its top-left navigation, editorial feature cards, typography, and horizontal search bar). This commit only changes its navigation links to point to real pages.
 
-Pages: index, about, projects, four project details, photography, and other. `js/content.js` holds the initial bilingual text; `js/language.js` applies language changes without a server.
+The original homepage's Tailwind dependency is **temporarily retained**, using `css/prototype.css`. The new detail pages use the plain `css/style.css` from the approved site. The original `js/main.js` and `js/tailwind-config.js` remain only until the planned homepage replacement in Step 05.
 
-Next planned improvement: expose bilingual content in an editable `site-content.json` and load it at runtime on GitHub Pages.
-
-Open `index.html` to preview locally, or publish the repository root with GitHub Pages.
+No unrelated logo, capsule-style homepage, or intermediate bespoke hero layout is introduced. The placeholder project descriptions on the original homepage remain from the user's original prototype and will be replaced in Step 05.
