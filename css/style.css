@@ -1,0 +1,75 @@
+/* Atmospheric misty dusk backdrop matching reference */
+    .hero-sky-bg {
+      background: 
+        radial-gradient(ellipse 90% 60% at 50% 28%, rgba(138, 110, 96, 0.22) 0%, rgba(30, 36, 45, 0.45) 50%, rgba(9, 11, 14, 0.98) 85%),
+        linear-gradient(180deg, #0d1117 0%, #151922 25%, #090b0e 65%);
+    }
+
+    /* Minimalist blueprint alternate background */
+    .blueprint-mode {
+      background: #090B0E !important;
+      background-image: 
+        linear-gradient(rgba(244, 162, 97, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244, 162, 97, 0.05) 1px, transparent 1px) !important;
+      background-size: 40px 40px !important;
+    }
+
+    /* Reference Card Framed Offset Wireframe (Thin elegant white wireframe) */
+    .frame-box-left {
+      position: relative;
+    }
+    .frame-box-left::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      width: 88%;
+      height: 88%;
+      border-top: 1px solid rgba(255, 255, 255, 0.35);
+      border-left: 1px solid rgba(255, 255, 255, 0.35);
+      pointer-events: none;
+      z-index: 0;
+      transition: all 0.35s ease;
+    }
+    .frame-box-left:hover::before {
+      border-color: #F4A261;
+      transform: translate(-3px, -3px);
+    }
+
+    .frame-box-right {
+      position: relative;
+    }
+    .frame-box-right::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 88%;
+      height: 88%;
+      border-top: 1px solid rgba(255, 255, 255, 0.35);
+      border-right: 1px solid rgba(255, 255, 255, 0.35);
+      pointer-events: none;
+      z-index: 0;
+      transition: all 0.35s ease;
+    }
+    .frame-box-right:hover::before {
+      border-color: #F4A261;
+      transform: translate(3px, -3px);
+    }
+
+    /* Frosted glass bar with delicate border */
+    .frosted-pill-bar {
+      background: rgba(22, 27, 34, 0.55);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    /* Smooth transition */
+    .fade-content {
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

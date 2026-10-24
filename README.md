@@ -1,5 +1,9 @@
-# Architectural Portfolio Prototype
+# Stage 00 — Original prototype, separated into files
 
-Initial single-file website prototype. Navigation, styling, content and JavaScript are combined in `index.html`. External Tailwind CDN and demo imagery are still in use.
+Source: `architectural_portfolio_prototype (2).html` supplied by the user.
 
-This is a prototype, not the final submission.
+Changes performed: move existing inline CSS to `css/style.css`, move existing inline language/navigation JS to `js/main.js`, move Tailwind configuration into `js/tailwind-config.js`. The original text, Unsplash example imagery, styling logic and behavior were **not edited**.
+
+**Not final:** this is the original fictional demonstration portfolio using Tailwind CDN and placeholder identity/projects. The next stage replaces the content with the user's actual portfolio and removes Tailwind. Don't use this stage as the final coursework submission.
+
+Images and documents are empty placeholders here, tracked with `.gitkeep` for Git.
